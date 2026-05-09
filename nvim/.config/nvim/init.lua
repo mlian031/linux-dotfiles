@@ -1,6 +1,4 @@
 -- ~/.config/nvim/init.lua
--- Minimal one-file IDE-style Neovim config
--- Fedora + Ghostty + Maple Mono + R/Python/LaTeX/Quarto/AI workflow
 
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"

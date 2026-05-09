@@ -1,75 +1,133 @@
 # Neovim Cheatsheet
 
-Leader key: Space
-Local leader: \
+`<leader>` is `Space`. `<localleader>` is `\`.
 
-## Basics
+## Daily Keys
 
-Space w  save
-Space x  close window / quit
-Esc      clear search highlight
+| Key | Action |
+| --- | --- |
+| `<leader>w` | Save |
+| `<leader>x` | Close window / quit |
+| `<Esc>` | Clear search highlight |
+| `<leader>e` | File explorer |
+| `<leader><Space>` | Smart picker |
+| `<leader>ff` | Find files |
+| `<leader>fg` | Live grep |
+| `<leader>fb` | Buffers |
+| `<leader>fh` | Help |
+| `<leader>gg` | Lazygit |
+| `<leader>tt` | Terminal |
+| `<leader>z` | Zen mode |
 
-## Files
+## Code
 
-Space e      file explorer
-Space Space  smart picker
-Space ff     find files
-Space fg     live grep
-Space fb     buffers
-Space fh     help
-
-## Git / Terminal
-
-Space gg  lazygit
-Space tt  terminal
-
-## LSP
-
-gd        go to definition
-gR        references
-gI        implementation
-K         hover docs
-Space rn  rename
-Space ca  code action
-Space fd  line diagnostics
-[d        previous diagnostic
-]d        next diagnostic
-
-## Formatting
-
-Space F  format file
+| Key | Action |
+| --- | --- |
+| `gd` | Go to definition |
+| `gR` | References |
+| `gI` | Implementation |
+| `K` | Hover docs |
+| `<leader>rn` | Rename |
+| `<leader>ca` | Code action |
+| `<leader>fd` | Line diagnostics |
+| `[d` | Previous diagnostic |
+| `]d` | Next diagnostic |
+| `<leader>F` | Format file |
 
 ## LaTeX
 
-Space lc  compile/watch
-Space lv  view PDF
-Space ls  stop compiler
-Space le  errors
-Space lt  table of contents
+| Key | Action |
+| --- | --- |
+| `<leader>lc` | Compile / watch |
+| `<leader>lv` | View PDF |
+| `<leader>ls` | Stop compiler |
+| `<leader>le` | Errors |
+| `<leader>lt` | Table of contents |
 
 ## Quarto
 
-Space qp  preview
-Space qP  preview PDF
-Space qr  render
+| Key | Action |
+| --- | --- |
+| `<leader>qp` | Preview |
+| `<leader>qP` | Preview PDF |
+| `<leader>qr` | Render |
 
 ## R
 
-\ rf  start R
-\ rr  send R line
-\ rs  send R selection
+| Key | Action |
+| --- | --- |
+| `<localleader>rf` | Start R |
+| `<localleader>rr` | Send R line |
+| `<localleader>rs` | Send R selection |
 
 ## AI
 
-Space aa  AI actions
-Space ac  AI chat
-Space ai  AI inline prompt, visual mode
-Space aq  AI chat, smart model
-Space as  run gpt-oss-smart
-Space af  run qwen-coder-fast
-Space ap  show Ollama running models
-Space aS  stop Ollama models
+| Key | Action |
+| --- | --- |
+| `<leader>aa` | AI actions |
+| `<leader>ac` | AI chat |
+| `<leader>ai` | AI inline prompt, visual mode |
+| `<leader>aq` | AI chat, smart model |
+| `<leader>as` | Run `gpt-oss-smart` |
+| `<leader>af` | Run `qwen-coder-fast` |
+| `<leader>ap` | Show Ollama running models |
+| `<leader>aS` | Stop Ollama models |
 
-## Focus
+## Copyable Commands
 
-Space z  zen mode
+Open Neovim:
+
+```sh
+nvim .
+```
+
+Update plugins:
+
+```vim
+:Lazy sync
+```
+
+Open Mason:
+
+```vim
+:Mason
+```
+
+Check health:
+
+```vim
+:checkhealth
+```
+
+Check formatting setup:
+
+```vim
+:ConformInfo
+```
+
+LaTeX commands:
+
+```vim
+:VimtexCompile
+:VimtexView
+:VimtexErrors
+:VimtexStop
+```
+
+Quarto commands:
+
+```sh
+quarto preview file.qmd
+quarto preview file.qmd --to pdf
+quarto render file.qmd
+```
+
+Ollama commands:
+
+```sh
+ollama ps
+ollama run gpt-oss-smart
+ollama run qwen-coder-fast
+ollama stop gpt-oss-smart
+ollama stop qwen-coder-fast
+```
