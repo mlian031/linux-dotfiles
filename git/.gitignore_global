@@ -1,0 +1,14 @@
+.DS_Store
+.Rhistory
+.RData
+.Rproj.user/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+renv/library/
+*.log
+*.aux
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk

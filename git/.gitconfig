@@ -17,3 +17,9 @@
 	gpgsign = true
 [gpg]
 	program = gpg
+[diff]
+	tool = vimdiff
+[color]
+	ui = auto
+[credential]
+	helper = cache
