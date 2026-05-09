@@ -1,0 +1,19 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Mike Liang
+	email = mlian031@uottawa.ca
+	signingkey = 5EF4E24DC5BB5071
+[pull]
+	rebase = false
+[push]
+	default = simple
+[core]
+	editor = nvim
+	excludesfile = /home/mikeliang/.gitignore_global
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
+[gpg]
+	program = gpg

@@ -1,0 +1,15 @@
+# Oh My Zsh compatibility, without loading the whole framework
+getantidote/use-omz
+
+# Useful OMZ plugins
+ohmyzsh/ohmyzsh path:plugins/git
+ohmyzsh/ohmyzsh path:plugins/sudo
+ohmyzsh/ohmyzsh path:plugins/extract
+ohmyzsh/ohmyzsh path:plugins/colored-man-pages
+ohmyzsh/ohmyzsh path:plugins/direnv
+
+# Core Zsh quality-of-life plugins
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zdharma-continuum/fast-syntax-highlighting
+Aloxaf/fzf-tab

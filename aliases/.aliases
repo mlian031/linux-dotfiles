@@ -1,0 +1,19 @@
+alias ll='eza -lah --git 2>/dev/null || ls -lah'
+alias la='ls -lah'
+alias c='clear'
+alias grep='grep --color=auto'
+
+alias gs='git status --short'
+alias gst='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gl='git log --oneline --graph --decorate --all'
+
+alias proj='cd ~/Projects'
+alias data='cd ~/Datasets'
+alias papers='cd ~/Papers'
+
+alias r='R'
+alias py='python'
+alias q='quarto'
