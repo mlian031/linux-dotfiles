@@ -1,6 +1,7 @@
 
 # paths
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$PATH"
+[[ -d "$HOME/.spicetify" ]] && export PATH="$PATH:$HOME/.spicetify"
 export EDITOR="${EDITOR:-nvim}"
 export VISUAL="${VISUAL:-code --wait}"
 

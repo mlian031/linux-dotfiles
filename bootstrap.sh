@@ -21,11 +21,19 @@ install_fedora() {
     fzf
     git
     gnupg2
+    lazygit
     neovim
+    nodejs
+    npm
+    cargo
+    python3-neovim
+    R-core
     ripgrep
     starship
     stow
     tmux
+    zathura
+    latexmk
     zoxide
     zsh
   )
@@ -43,10 +51,18 @@ install_ubuntu() {
     fzf
     git
     gnupg
+    lazygit
     neovim
+    nodejs
+    npm
+    cargo
+    python3-neovim
+    r-base
     ripgrep
     stow
     tmux
+    zathura
+    latexmk
     zoxide
     zsh
   )
@@ -76,11 +92,19 @@ install_arch() {
     fzf
     git
     gnupg
+    lazygit
     neovim
+    nodejs
+    npm
+    cargo
+    python-pynvim
+    r
     ripgrep
     starship
     stow
     tmux
+    zathura
+    texlive-binextra
     zoxide
     zsh
   )
@@ -113,7 +137,7 @@ install_antidote() {
 
 stow_dotfiles() {
   info "Stowing dotfiles"
-  stow --dir "$DOTFILES_DIR" --target "$HOME" zsh aliases git
+  stow --dir "$DOTFILES_DIR" --target "$HOME" zsh aliases git nvim
 }
 
 main() {
